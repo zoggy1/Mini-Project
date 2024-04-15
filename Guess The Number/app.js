@@ -3,6 +3,8 @@ let messageTwo = document.querySelector('.msg2');
 let messageThree = document.querySelector('.msg3');
 let chance = 10;
 let guessedNumbers =[];
+let div = document.getElementById('game-div');
+
 let answer = Math.floor(Math.random() * 50 + 1);
 messageTwo.textContent = "Number of chances to guess: " + chance;
 
@@ -14,18 +16,23 @@ function play() {
         alert("Please Enter The Numbet between 1 to 50");
     } else {
         if (guessedNumber > answer) {
+            div.classList.add('wrong');
             messageOne.textContent = "Your Number Is Too High";
             chance-=1;
             messageTwo.textContent = "Number of chances to guess: " + chance;
             guessedNumbers.push(guessedNumber);
             messageThree.textContent = "Guessed Numbers are: " + guessedNumbers;
+            guessedNumber = " ";
         } else if (guessedNumber < answer) {
+            div.classList.add('wrong');
             messageOne.textContent = "Your Number Is Too Low";
             chance-=1;
             messageTwo.textContent = "Number of chances to guess: " + chance;
             guessedNumbers.push(guessedNumber);
             messageThree.textContent = "Guessed Numbers are: " + guessedNumbers;
+            guessedNumber = " ";
         } else if (guessedNumber === answer) {
+            div.classList.add('true');
             messageOne.textContent = "Congratulation You Have Won This Game!";
         }
     }
@@ -34,4 +41,4 @@ function play() {
 //to restart the game; won or not;
 function restart() {
 
-};
+};22

@@ -64,8 +64,6 @@ button {
     color: black;
 }
 
-
-
 .reset-btn {
     background-color: lightblue;
     color: black;
@@ -79,4 +77,12 @@ input[type="number"] {
     width: 100px;
     height: 40px;
     font-size: 20px;  
+}
+
+.wrong {
+    border: 2px solid red;   
+}
+
+.true {
+    border: 2px solid blue;
 }
