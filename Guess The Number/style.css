@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    text-align: center;
+}
+
+button {
+    background-color: black;
+    color: lightblue;
+    border: none;
+    border-radius: 5px;
+    width: 50px;   
+}
+
+.container {
+    margin: 250px;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+.header, .body, .footer {
+
+}
+
+.header {
+    padding: 30px;
+    background-color: black;
+    color: lightblue;
+}
+
+.body .main {
+    background-color: lightblue;
+    color: black;
+    padding: 30px;
+}
+
+.body .minor {
+    background-color: black;
+    color: lightblue;
+    padding: 20px;
+    font-size: 23px;
+    font-weight: 500;
+}
+
+.main {
+    padding: 25px;
+}
+
+.footer {
+    background-color: lightblue;
+    color: black;
+}
+
+.reset-btn {
+    background-color: lightblue;
+    color: black;
+    font-size: 15px;
+    font-weight: 500;
+    cursor:pointer
+}
