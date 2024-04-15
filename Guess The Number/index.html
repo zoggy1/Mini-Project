@@ -17,18 +17,18 @@
     
         <div class="body">
             <div class="main">
-                <input type="number" class="guess-input">
-                <button class="guess-btn">Guess</button>
+                <input type="number" class="guess-input" id="guess_Input">
+                <button class="guess-btn" onclick="play()">Guess</button>
             </div>
             <div class="minor">
-                <p>Your number is too high/ too low.</p>
-                <p>Total guesses to guess</p>
-                <p>Guessed numbers are: </p>
+                <p class="msg1"></p>
+                <p class="msg2"></p>
+                <p class="msg3">Guessed Numbers are: </p>
             </div>
         </div>
     
         <div class="footer">
-            <button type="reset" class="reset-btn">Restart</button>
+            <button type="reset" class="reset-btn" onclick="restart()">Restart</button>
         </div>
     
     </div>

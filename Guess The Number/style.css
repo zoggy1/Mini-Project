@@ -22,10 +22,6 @@ button {
     border-radius: 5px;
 }
 
-.header, .body, .footer {
-
-}
-
 .header {
     padding: 30px;
     background-color: black;
@@ -48,6 +44,19 @@ button {
 
 .main {
     padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main > .guess-btn {
+    margin-top: 10px;
+    width: 100px;
+    height: 40px;
+    font-size: 20px;
+    text-align: center;
+    cursor: pointer;
 }
 
 .footer {
@@ -55,10 +64,19 @@ button {
     color: black;
 }
 
+
+
 .reset-btn {
     background-color: lightblue;
     color: black;
     font-size: 15px;
     font-weight: 500;
     cursor:pointer
+}
+
+input[type="number"] {
+    border: none;
+    width: 100px;
+    height: 40px;
+    font-size: 20px;  
 }
